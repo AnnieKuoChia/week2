@@ -1,0 +1,236 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	border: 1px solid black;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 以下為字型設定 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,500;1,700;1,900&display=swap');
+
+h1 {
+	font-family: Roboto,black italic;
+	font-size: 80px;
+	line-height: 94px;
+	color: white;
+	margin-bottom: 32px;
+	margin-top: 0;
+}
+
+h2	{
+	font-family: Roboto,medium italic;
+	font-size: 64px;
+	line-height: 75px;
+	margin-top: 64px;
+}
+
+h3 {
+	font-family: Roboto,medium italic;
+	font-size: 20px;
+	line-height: 42px;
+	color: white;
+}
+
+p {
+	font-family: Roboto,medium italic;
+	font-size: 24px;
+	line-height: 42px;
+}
+
+.title p{
+	font-size: 20px;
+}
+
+.footer p {
+	line-height: 36px;
+}
+
+.brand .title, .footer .title {
+	color: white;
+}
+
+/* 以上為字型設定 */
+
+/* banner */
+.banner {
+	background-image: url(img/banner.png);
+	background-position: center center;
+  	background-repeat: no-repeat;
+  	width: 100%;
+  	height: 958px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.banner .founder {
+	margin-bottom: 48px;
+}
+
+.banner_icon {
+	display: flex;
+	justify-content: space-between;
+}
+
+.inner {
+	margin: 0 auto;
+}
+
+/* about */
+.about {
+	display: flex;
+	text-align:center;
+}
+
+.about_profile {
+	margin: 0 auto;
+}
+
+.about h2 {
+	margin-bottom: 34.5px;
+}
+
+.about img {
+	width: 384px;
+	height: 384px;
+	margin-bottom: 24px;
+}
+
+.about hr {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.about ul {
+	margin-bottom: 40px;
+}
+
+.about li {
+	padding: 16px;
+	
+}
+
+.job_item{
+	width: 332px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 42px;
+	position: relative;
+	margin: 0 auto;
+  }
+  
+  .job_item::before{
+	content:'';
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	background-color: #891818;
+	border-radius:50%;
+	margin-left: -38px;
+	margin-top: 10px;
+  }
+
+/* brand */
+.brand {
+	background-color: #000000;
+	text-align:center;
+}
+
+.brand .title {
+	margin-top: 64px;
+	margin-bottom: 32px;
+}
+
+.brand .title p {
+	padding: 16px;
+}
+
+.brand img {
+	height: 416px;
+	padding: 20px 12px;
+}
+
+.brand_2 {
+	margin-bottom: 140px;
+}
+
+/* works */
+.works {
+	background-image: url(img/photo-1561291386-5be50364cfb5.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+
+.works .title {
+	text-align:center;
+	padding: 24px;
+	margin-bottom: 8px;
+}
+
+.works_1, .works_2, .works_3 {
+	display: flex;
+	justify-content: center;
+}
+
+.works_info {
+	padding-bottom:56px;
+	padding-left: 12px;
+	padding-right: 12px;
+	text-align:center;
+}
+
+.works_3 {
+	margin-bottom: 106px;
+}
+
+/* footer */
+.footer {
+	background-color: #000000;
+	text-align:center;
+}
+
+.footer .title {
+	margin-bottom: 80px;
+	padding: 8px 0;
+}
